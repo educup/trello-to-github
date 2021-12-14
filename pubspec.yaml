@@ -1,0 +1,21 @@
+name: trello_to_github
+description: Open-source and collaborative tool for migrating Trello cards of a board to GitHub issues of a repository.
+
+publish_to: 'none'
+
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^1.8.1
+
+flutter:
+  uses-material-design: true
