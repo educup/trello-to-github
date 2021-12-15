@@ -14,7 +14,7 @@ class TrelloLabelModel {
   final String id;
   final String idBoard;
   final String name;
-  final String color;
+  final String? color;
 
   TrelloLabelModel copyWith({
     String? id,

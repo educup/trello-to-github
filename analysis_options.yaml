@@ -6,6 +6,8 @@ analyzer:
     - lib/generated_plugin_registrant.dart
     - lib/**/*.g.dart
     - lib/**/*.freezed.dart
+    - lib/**/*.config.dart
+    - lib/src/i18n/messages*.dart
   strong-mode:
     implicit-casts: false
   errors:
@@ -19,3 +21,5 @@ linter:
     constant_identifier_names: false
     prefer_function_declarations_over_variables: false
     prefer_single_quotes: true
+    sort_constructors_first: true
+    unawaited_futures: true

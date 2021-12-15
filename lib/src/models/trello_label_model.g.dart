@@ -11,7 +11,7 @@ TrelloLabelModel _$TrelloLabelModelFromJson(Map<String, dynamic> json) =>
       id: json['id'] as String,
       idBoard: json['idBoard'] as String,
       name: json['name'] as String,
-      color: json['color'] as String,
+      color: json['color'] as String?,
     );
 
 Map<String, dynamic> _$TrelloLabelModelToJson(TrelloLabelModel instance) =>
