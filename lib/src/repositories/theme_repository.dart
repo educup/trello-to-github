@@ -21,8 +21,8 @@ class ThemeRepository {
     }
   }
 
-  Future<Either<Unit, Failure>> setThemeMode(ThemeMode themeMode) async {
+  Future<Either<Failure, Unit>> setThemeMode(ThemeMode themeMode) async {
     await box.put('mode', themeMode.index);
-    return const Left(unit);
+    return const Right(unit);
   }
 }
